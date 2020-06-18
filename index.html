@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        list-style: none;
+    }
+        html,body{
+            height:98vh;
+        }
+        .container{
+            background:  #fff;
+            padding:30px;
+            height:100%;
+            box-shadow:
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc;
+
+        }
+
+     .container .spinner{
+         position:relative;
+         height:150px;
+         width:150px;
+         margin:0 auto;
+         border-radius:50%;
+        box-shadow:
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px red,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc;
+     
+     
+            border-top:3px solid yellow;
+            border-bottom:3px solid brown;
+              }
+     .container .spinner-circle{
+         height:70px;
+         width:70px;
+         position:absolute;
+         top:50%;
+         left:50%;
+         transform:translate(-50%,-50%);
+         border-radius:50%;
+                box-shadow:
+            inset 0px 0px 23px #dcdcdc,
+            inset 0px 0px 23px #dcdcdc,
+            inset 0px 0px 23px #dcdcdc,
+            inset 0px 0px 23px #dcdcdc,
+            inset 0px 0px 23px #dcdcdc,
+            inset 0px 0px 23px #dcdcdc,
+            inset 0px 0px 23px #dcdcdc,
+            inset 0px 0px 23px #dcdcdc,
+            inset 0px 0px 23px #dcdcdc,
+            inset 0px 0px 23px #dcdcdc;
+            
+     }
+     .player_btns{
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+         height:100px;
+         width:100%;
+         margin-top:50px;
+         box-shadow:
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc,
+            0px 0px 5px #dcdcdc;
+         position:relative;
+         
+     }
+     .player_btns li{
+         height:30px;
+         width:30px;
+         margin:5px;
+         border-radius:20px;
+         box-shadow: 
+         0px 0px 7px #dcdcdc,
+         0px 0px 7px #dcdcdc,
+         0px 0px 7px #dcdcdc,
+         0px 0px 7px #dcdcdc,
+         0px 0px 7px #dcdcdc,
+         0px 0px 7px #dcdcdc,
+         0px 0px 7px #dcdcdc,
+         0px 0px 7px #dcdcdc,
+         0px 0px 7px #dcdcdc,
+         0px 0px 7px #dcdcdc,
+         0px 0px 7px #dcdcdc;
+        text-align:center;
+     }
+     .player_btns li i{
+         line-height:30px;
+         font-size:.8em;
+     }
+     @-webkit-keyframes spin{
+         from{
+          -webkit-transform: rotate(0deg);
+         }
+         to{
+             -webkit-transform: skew(10deg) rotate(360deg);
+         }
+     }
+     @keyframes spin{
+         from{
+             transform: rotate(0deg);
+         }
+         to{
+             transform: rotate(360deg);
+         }
+     }
+     .color{
+         background:#333;
+          color: #fff;
+     }
+     h2{
+         text-align:center;
+         color:#1f1f1f;
+         margin-top:-20px;
+     }
+     .sm{
+         text-align: center;
+         margin-top: 150px;
+         font-size:20px;
+     }
+     .sm span{
+         font-family: 'Zcool XiaoWei';
+         color:#2C4893 ;
+     }
+     .liner{
+         position:absolute;
+         width:0;
+         height:6px;
+         background:red;
+         top:0;
+         left:0;
+     }
+     input{
+         display: block;
+     }
+     .show-name{
+         text-align:center;
+         margin-top:40px;
+         font-weight: bold;
+         color:333;
+     }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <h2>A simple music player</h2>
+    <div id="spinner" class="spinner">
+     <div class="spinner-circle"></div>
+    </div>
+    <div class="show-name"></div>
+    <div class="player_btns">
+             <audio id="music">
+</audio>      <li><i class="fa fa-forward"></i></li>
+             <li><i class="fa fa-play"></i></li>
+            <li><i class="fa fa-pause"></i></li>
+            <li><i class="fa fa-stop"></i></li>
+            <li><i class="fa fa-backward"></i></li>
+
+    </div>
+       <div class="sm">
+       <p>Made by <span>Arhia Bernard</span></p>
+   </div>
+
+   </div>
+   
+
+<script src="musicplayer.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
+
+
+
